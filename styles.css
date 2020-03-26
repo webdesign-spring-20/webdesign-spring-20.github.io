@@ -1,0 +1,132 @@
+body {
+
+    font-family: sans-serif;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: green; */
+  height: 100vh;
+  /* background-color: red; */
+}
+
+.textbox {
+  /* background-color: red; */
+  width: 85vw;
+  height: 90vh;
+  display: flex;
+  /* pointer-events: none; */
+  /* border: 1px solid black; */
+}
+
+.textbox div p {
+  /* pointer-events: none; */
+}
+
+.spacer {
+    width: 50%;
+    min-width: 50%;
+    /* background-color: blue; */
+    /* display: block; */
+}
+
+.text {
+  width: 50%;
+}
+
+.small_text {
+  margin-left: 5vw;
+  margin-top: 5vw;
+  font-size: 1.25vw;
+  font-family: helvetica;
+  font-weight: bold;
+  line-height: 5vh;
+}
+
+#images_1 {
+  width: 85vw;
+  max-width: 85vw;
+  height: 90vh;
+  position: absolute;
+  z-index: 1;
+  /* background: rgba(255, 0, 0, .1); */
+  display: flex;
+  align-content: stretch;
+  justify-content: stretch;
+  /* pointer-events: all; */
+}
+
+#images_1 div img {
+  width: 100%;
+  max-width: 27vw;
+  height: auto;
+  opacity: .3;
+    -webkit-transition: opacity .8s;
+}
+
+#images_1 div img:hover {
+  opacity: 1;
+   -webkit-transition: opacity .8s;
+}
+
+#images_1 div {
+  /* background-color: blue; */
+  /* border: 2px dashed red; */
+  flex-shrink: .5;
+  max-width:
+}
+
+
+
+#img1 {
+  /* padding-right: 10vw; */
+  flex: 1.33;
+}
+#img2{
+  /* max-height: 30vh; */
+  align-self: flex-end;
+  padding-right: .5vw;
+  /* padding-left: vw; */
+  flex: 2;
+
+
+}
+#img3{
+
+}
+
+#middle_img {
+  padding-left: 4.67vw;
+}
+
+/*
+@keyframes example_animation {
+  from {}
+  to {}
+} */
+/* @-webkit-keyframes ease_out {
+    from {opacity: 1;}
+    to {opacity: .3;}
+}
+
+@-webkit-keyframes easy_opacity {
+  from {opacity: .3;}
+  to {opacity: 1;}
+
+} */
+
+@font-face {
+  font-family: testFont;
+  src: url(BubblegumSans-Regular.ttf);
+}
+
+@media screen and (max-width: 800px) {
+.row {
+  display: block;
+  max-width: 85vw;
+}
+}
